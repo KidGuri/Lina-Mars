@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: #faf9f7;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#root { width: 100%; min-height: 100svh; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #faf9f7; }
+::-webkit-scrollbar-thumb { background: #c9a98a; }
+
+/* Typography */
+.font-display { font-family: 'Cormorant Garamond', serif; }
+
+/* Text reveal clip */
+.reveal-wrapper { overflow: hidden; }
+
+/* Thin divider */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: #c9a98a;
+  display: inline-block;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: #1a1a1a;
+  color: #faf9f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: #1a1a1a;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: transparent;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.btn-outline:hover {
+  background: #1a1a1a;
+  color: #faf9f7;
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: transparent;
+  color: #faf9f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(250,249,247,0.5);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.btn-light:hover {
+  background: #faf9f7;
+  color: #1a1a1a;
+}
+
+/* Price table */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+  transition: background 0.2s;
+}
+.price-row:last-child { border-bottom: none; }
+
+/* Nav */
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s;
+  opacity: 0.7;
+}
+.nav-link:hover { opacity: 1; }
+
+/* Section spacing */
+.section { padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px); }
+.section-sm { padding: clamp(40px, 6vw, 80px) clamp(20px, 6vw, 80px); }
+
+/* Eyebrow label */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c9a98a;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
