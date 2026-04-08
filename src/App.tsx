@@ -83,7 +83,7 @@ export default function App() {
         {/* Background image — first photo */}
         <div style={{ position: 'absolute', inset: 0 }}>
           <img
-            src={photos[0]}
+            src={photos[4]}
             alt="Lina Mars"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
           />
