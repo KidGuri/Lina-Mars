@@ -53,12 +53,16 @@ export default function Navbar() {
         <a
           href="#"
           onClick={e => { e.preventDefault(); setMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+          style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}
         >
           <img
             src="/logo.png"
             alt="Lina Mars"
             style={{
-              height: '32px', width: 'auto',
+              height: '32px',
+              width: 'auto',
+              maxWidth: 'none',
+              flexShrink: 0,
               filter: scrolled || menuOpen ? 'invert(1)' : 'none',
               transition: 'filter 0.4s',
             }}
