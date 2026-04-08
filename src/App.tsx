@@ -85,7 +85,7 @@ export default function App() {
           <img
             src={photos[4]}
             alt="Lina Mars"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 35%' }}
           />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)' }} />
         </div>
